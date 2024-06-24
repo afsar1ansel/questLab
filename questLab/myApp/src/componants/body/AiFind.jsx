@@ -47,7 +47,7 @@ export default function AiFind() {
           width={"100%"}
         >
           <Img
-            width={"80%"}
+            // width={"80%"}
             margin={"auto"}
             src="https://www.questlabs.ai/assets/mini-segment-RCDnplfN.svg"
             alt="logo"
@@ -121,7 +121,7 @@ export default function AiFind() {
             </Text>
           </Box>
           <Img
-            width={"80%"}
+            // width={{ base: "300px", md: "100%", lg: "100%" }}
             margin={"auto"}
             src="https://www.questlabs.ai/assets/mini-segment-RCDnplfN.svg"
             alt="logo"
