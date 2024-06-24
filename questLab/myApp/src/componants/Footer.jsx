@@ -2,7 +2,7 @@ import { Box, Img, Text } from "@chakra-ui/react";
 
 export default function Footer() {
   return (
-    <Box backgroundColor={"#0d0d0d"} width={"90%"} >
+    <Box backgroundColor={"#0d0d0d"} >
       <Box
         display="flex"
         flexDirection={{ base: "column", md: "row" }}
@@ -16,6 +16,7 @@ export default function Footer() {
         borderBottom="0.2px solid #939393"
         lineHeight={"8px"}
         backgroundColor={"#0d0d0d"}
+       
       >
         <Box
           display="flex"
