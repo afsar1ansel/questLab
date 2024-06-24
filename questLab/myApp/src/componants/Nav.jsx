@@ -11,6 +11,8 @@ import { IconButton } from "@chakra-ui/react";
 
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { AddIcon } from "@chakra-ui/icons";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 
@@ -18,13 +20,13 @@ import { AddIcon } from "@chakra-ui/icons";
 
 
 export default function Nav() {
+  AOS.init();
 
   return (
     <Box
       color="white"
       p={5}
       alignItems="center"
-      // justifyContent="space-between"
       position="sticky"
       top="0"
       left="0"
@@ -34,7 +36,7 @@ export default function Nav() {
       zIndex="10"
       pl={{ base: "20px", md: "100px", lg: "100px" }}
       pr={{ base: "20px", md: "100px", lg: "100px" }}
-      display={{ base: "flex", md: "flex",  lg: "flex" }}
+      display={{ base: "flex", md: "flex", lg: "flex" }}
       flexDirection="row"
       justifyContent={{ base: "space-between", md: "center", lg: "center" }}
     >
@@ -47,6 +49,7 @@ export default function Nav() {
         fontFamily="figtree, sans-serif"
         background={"transparent"}
         pl={{ base: "0px", md: "100px", lg: "100px" }}
+        data-aos="zoom-in"
       >
         <img
           src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Frame%20578'%3e%3cg%20id='Vector'%3e%3cpath%20d='M19.3503%200.666016V6.88824L13.128%2013.1105V6.88824H6.90582V10.9962C6.90582%2012.1642%207.85211%2013.1105%209.02008%2013.1105H13.128L6.90582%2019.3327C3.46933%2019.3327%200.683594%2016.5469%200.683594%2013.1105V0.666016H19.3503Z'%20fill='white'/%3e%3cpath%20d='M19.3503%2013.1105L13.128%2013.1105L13.128%2019.3327H19.3503V13.1105Z'%20fill='white'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e"

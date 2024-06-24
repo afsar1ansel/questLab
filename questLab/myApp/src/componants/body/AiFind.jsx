@@ -1,6 +1,9 @@
 import { Box, CardHeader, Heading, Img, Text } from "@chakra-ui/react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function AiFind() {
+  AOS.init();
     return (
       <div>
         <Box
@@ -12,6 +15,8 @@ export default function AiFind() {
           position={"relative"}
           mt={{ base: "50px", md: "100px", lg: "150px" }}
           mb={{ base: "50px", md: "100px", lg: "150px" }}
+          data-aos="zoom-in-down"
+          data-aos-duration="1000"
         >
           <Heading
             color={"white"}
@@ -52,6 +57,8 @@ export default function AiFind() {
             margin={"auto"}
             src="https://www.questlabs.ai/assets/mini-segment-RCDnplfN.svg"
             alt="logo"
+            data-aos="fade-up"
+            data-aos-duration="3000"
           />
           <Box
             width={{ base: "100%", md: "38%", lg: "38%" }}
@@ -60,6 +67,8 @@ export default function AiFind() {
             mt={"1rem"}
             paddingLeft={{ base: "20px", md: "85px" }}
             paddingRight={{ base: "20px", md: "85px" }}
+            data-aos="fade-up"
+            data-aos-duration="2000"
           >
             <Heading
               color={"white"}
@@ -90,6 +99,8 @@ export default function AiFind() {
           alignItems={"center"}
           flexDirection={"row"}
           mt={"5rem"}
+          data-aos="fade-down"
+          data-aos-duration="2000"
         >
           <Box
             width={{ base: "100%", md: "38%", lg: "38%" }}
@@ -98,6 +109,7 @@ export default function AiFind() {
             mt={"1rem"}
             paddingLeft={{ base: "20px", md: "85px" }}
             paddingRight={{ base: "20px", md: "85px" }}
+            // data-aos="fade-up-right"
           >
             <Heading
               color={"white"}
@@ -105,7 +117,6 @@ export default function AiFind() {
               fontSize={{ base: "1.25rem", md: "30px" }}
               textAlign={"start"}
               fontWeight={500}
-
             >
               Our models generate AI variants to optimize text, images, and UI
               layouts for each segment.
@@ -127,6 +138,7 @@ export default function AiFind() {
             margin={"auto"}
             src="https://www.questlabs.ai/assets/mini-segment-RCDnplfN.svg"
             alt="logo"
+            // data-aos="fade-up-left"
           />
         </Box>
       </div>

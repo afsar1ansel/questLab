@@ -1,14 +1,18 @@
 import { Box, Img, Text } from "@chakra-ui/react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Footer() {
+  AOS.init();
   return (
-    <Box backgroundColor={"#0d0d0d"} mt={"100px"}>
+    <Box backgroundColor={"#0d0d0d"} mt={"150px"} p={5}>
       <Box
+        data-aos="fade-up"
+        data-aos-duration="1000"
         display="flex"
         flexDirection={{ base: "column", md: "row" }}
         maxWidth="1250px"
         margin="auto"
-        // flexWrap={"wrap"}
         justifyContent={{ base: "center", md: "space-between" }}
         gap={{ base: "50px", md: "0px" }}
         paddingTop="80px"
@@ -50,7 +54,6 @@ export default function Footer() {
           width="full"
           maxWidth={{ base: "100%", md: "2/3" }}
           backgroundColor={"#0d0d0d"}
-        
         >
           <Box
             fontSize="sm"
@@ -62,11 +65,13 @@ export default function Footer() {
             backgroundColor={"#0d0d0d"}
             lineHeight={"20px"}
           >
-            <Text color={"white"}>Resources</Text>
-            <Text>Blog</Text>
-            <Text>NewsLetter</Text>
-            <Text>PlayBook</Text>
-            <Text>Docs</Text>
+            <Text color={"white"} backgroundColor={"#0d0d0d"}>
+              Resources
+            </Text>
+            <Text backgroundColor={"#0d0d0d"}>Blog</Text>
+            <Text backgroundColor={"#0d0d0d"}>NewsLetter</Text>
+            <Text backgroundColor={"#0d0d0d"}>PlayBook</Text>
+            <Text backgroundColor={"#0d0d0d"}>Docs</Text>
           </Box>
           <Box
             fontSize="sm"
@@ -78,10 +83,12 @@ export default function Footer() {
             backgroundColor={"#0d0d0d"}
             lineHeight={"20px"}
           >
-            <Text color={"white"}>Support</Text>
-            <Text>Contact</Text>
-            <Text>Join Quest Club</Text>
-            <Text>Sales Partner</Text>
+            <Text color={"white"} backgroundColor={"#0d0d0d"}>
+              Support
+            </Text>
+            <Text backgroundColor={"#0d0d0d"}>Contact</Text>
+            <Text backgroundColor={"#0d0d0d"}> Join Quest Club</Text>
+            <Text backgroundColor={"#0d0d0d"}>Sales Partner</Text>
           </Box>
           <Box
             fontSize="sm"
@@ -93,10 +100,12 @@ export default function Footer() {
             backgroundColor={"#0d0d0d"}
             lineHeight={"20px"}
           >
-            <Text color={"white"}>Legal</Text>
-            <Text>Privacy Policy</Text>
-            <Text>Terms of Use</Text>
-            <Text>Cookies Policy</Text>
+            <Text color={"white"} backgroundColor={"#0d0d0d"}>
+              Legal
+            </Text>
+            <Text backgroundColor={"#0d0d0d"}>Privacy Policy</Text>
+            <Text backgroundColor={"#0d0d0d"}>Terms of Use</Text>
+            <Text backgroundColor={"#0d0d0d"}>Cookies Policy</Text>
           </Box>
         </Box>
       </Box>
@@ -115,7 +124,11 @@ export default function Footer() {
         width="100%"
         borderTop={"0.2px solid #939393"}
       >
-        <Text width={{ base: "100%", md: "auto" }} margin={"auto"}>
+        <Text
+          width={{ base: "100%", md: "auto" }}
+          margin={"auto"}
+          backgroundColor={"#0d0d0d"}
+        >
           @ 2022 Quest Labs. All rights reserved
         </Text>
       </Box>

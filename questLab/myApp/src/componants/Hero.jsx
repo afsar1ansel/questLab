@@ -1,7 +1,11 @@
 import { Box, Button, Heading, Input, Text, Image } from "@chakra-ui/react";
 import "./Hero.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 export default function Hero() {
+  AOS.init();
   return (
     <Box
       className="heroDiv"
@@ -19,6 +23,7 @@ export default function Hero() {
             fontFamily="figtree"
             width={{ base: "358px", md: "650px", lg: "940px" }}
             margin="auto"
+            data-aos="fade-up"
           >
             Transform Your Product with Intelligent In-App Experiences
           </Heading>
@@ -103,6 +108,7 @@ export default function Hero() {
             objectFit="cover"
             objectPosition="center"
             bg="none"
+            data-aos="zoom-in"
           />
         </Box>
       </div>
