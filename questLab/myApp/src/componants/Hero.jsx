@@ -3,7 +3,11 @@ import "./Hero.css";
 
 export default function Hero() {
   return (
-    <Box className="heroDiv">
+    <Box
+      className="heroDiv"
+      top={{ base: "20vh", lg: "0" }}
+      position={{ base: "relative", lg: "relative" }}
+    >
       <div className="hero">
         <div className="header-text">
           <Heading
@@ -43,7 +47,7 @@ export default function Hero() {
               display="flex"
               justifyContent="space-between"
               alignItems="center"
-              width={{ lg: "405px" }}
+              width={{ base: "300px", lg: "405px" }}
               my={7}
               py={3}
               pr={3}

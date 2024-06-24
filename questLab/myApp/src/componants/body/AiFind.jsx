@@ -3,7 +3,7 @@ import { Box, CardHeader, Heading, Img, Text } from "@chakra-ui/react";
 export default function AiFind() {
     return (
       <div>
-        <Box margin={"auto"} display={"flex"} flexDirection={"column"} gap={0}>
+        <Box margin={"auto"} display={"flex"} flexDirection={"column"} gap={0} width={{ base: "300px", md: "450px", lg: "647px" }} position={"relative"} >
           <Heading
             color={"white"}
             textAlign={"center"}
@@ -36,8 +36,8 @@ export default function AiFind() {
           justifyContent={"center"}
           flexDirection={{ base: "coloum-reverse", md: "coloum" }}
           alignItems={"center"}
-        //   flexDirection={"row"}
           mt={"4rem"}
+          width={"100%"}
         >
           <Img
             src="https://www.questlabs.ai/assets/mini-segment-RCDnplfN.svg"
@@ -47,7 +47,6 @@ export default function AiFind() {
             width={"38%"}
             display={"flex"}
             flexDirection={{ base: "column", md: "row" }}
-            // alignItems={"flex-end"}
             mt={"1rem"}
             paddingLeft={{ base: "0px", md: "85px" }}
             paddingRight={{ base: "0px", md: "85px" }}
