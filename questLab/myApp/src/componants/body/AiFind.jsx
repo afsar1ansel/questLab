@@ -10,6 +10,8 @@ export default function AiFind() {
           gap={0}
           width={{ base: "300px", md: "450px", lg: "647px" }}
           position={"relative"}
+          mt={{ base: "50px", md: "100px", lg: "150px" }}
+          mb={{ base: "50px", md: "100px", lg: "150px" }}
         >
           <Heading
             color={"white"}
@@ -43,7 +45,6 @@ export default function AiFind() {
           justifyContent={"center"}
           flexDirection={{ base: "coloum-reverse", md: "coloum" }}
           alignItems={"center"}
-          mt={"4rem"}
           width={"100%"}
         >
           <Img
@@ -53,12 +54,12 @@ export default function AiFind() {
             alt="logo"
           />
           <Box
-            width={"38%"}
+            width={{ base: "100%", md: "38%", lg: "38%" }}
             display={"flex"}
-            flexDirection={{ base: "column", md: "row" }}
+            flexDirection={"column"}
             mt={"1rem"}
-            paddingLeft={{ base: "0px", md: "85px" }}
-            paddingRight={{ base: "0px", md: "85px" }}
+            paddingLeft={{ base: "20px", md: "85px" }}
+            paddingRight={{ base: "20px", md: "85px" }}
           >
             <Heading
               color={"white"}
@@ -88,15 +89,15 @@ export default function AiFind() {
           justifyContent={"center"}
           alignItems={"center"}
           flexDirection={"row"}
-          mt={"4rem"}
+          mt={"5rem"}
         >
           <Box
-            width={"38%"}
-            display={{ base: "grid", md: "flex" }}
-            flexDirection={{ base: "column", md: "row" }}
+            width={{ base: "100%", md: "38%", lg: "38%" }}
+            display={"flex"}
+            flexDirection={"column"}
             mt={"1rem"}
-            paddingLeft={{ base: "0px", md: "85px" }}
-            paddingRight={{ base: "0px", md: "85px" }}
+            paddingLeft={{ base: "20px", md: "85px" }}
+            paddingRight={{ base: "20px", md: "85px" }}
           >
             <Heading
               color={"white"}
@@ -104,6 +105,7 @@ export default function AiFind() {
               fontSize={{ base: "1.25rem", md: "30px" }}
               textAlign={"start"}
               fontWeight={500}
+
             >
               Our models generate AI variants to optimize text, images, and UI
               layouts for each segment.
@@ -115,13 +117,13 @@ export default function AiFind() {
               color={"#b9b9b9"}
               fontFamily={"figtree, sans-serif"}
               mt={"1rem"}
+              mb={"1rem"}
             >
               Easily find winning variants among millions of variants to power
               users across the customer journey
             </Text>
           </Box>
           <Img
-            // width={{ base: "300px", md: "100%", lg: "100%" }}
             margin={"auto"}
             src="https://www.questlabs.ai/assets/mini-segment-RCDnplfN.svg"
             alt="logo"
